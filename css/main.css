@@ -16,6 +16,7 @@ body {
     background-color: var(--backgroundcolor);
     min-height: 100vh;
     font-family: 'Merriweather', serif;
+    display: grid;
 }
 
 .header {
@@ -70,7 +71,10 @@ body {
 
 
 .main {
+    margin: 0 auto;
     padding: 2rem;
+    
+    max-width: 800px;
 }
 
 #side {
