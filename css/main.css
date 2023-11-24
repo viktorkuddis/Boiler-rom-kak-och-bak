@@ -6,8 +6,46 @@
     padding: 0;
 }
 
+:root{
+    --brownTextColor: #4B3733;
+    --backgroundcolor: #B2D0C7;
+    --headerbg-golor: 
+}
+
 body {
+    background-color: var(--backgroundcolor);
     min-height: 100vh;
+    font-family: 'Merriweather', serif;
+}
+
+.header {
+    border: 5px double black;
+    text-align: center;
+    background: radial-gradient(circle, rgba(222,220,203,1) 0%, rgba(182,201,192,1) 100%);
+}
+#kakochbak-text-logo{
+    color: var(--brownTextColor);
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #C09880, 3px 5px 5px #8C827B;
+
+}
+
+.wielcome-svg {
+    position: relative;
+    width: 10%;
+    border: 1px solid black;
+    
+}
+.wielcome-svg::before {
+    content: "hej";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #B5846C;
+    border: 2px double black;
+
 }
 
 .main {
