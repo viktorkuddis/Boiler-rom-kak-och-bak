@@ -70,7 +70,9 @@ body {
 }
 
 
-.main {}
+.main {
+    padding: 2rem;
+}
 
 #side {
     margin-top: 22vh;
@@ -99,4 +101,5 @@ body {
 
     background-color: lightblue;
     min-height: 50vh;
+    margin-top: 1rem;
 }
