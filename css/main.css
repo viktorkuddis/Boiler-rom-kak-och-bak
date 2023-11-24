@@ -6,10 +6,10 @@
     padding: 0;
 }
 
-:root{
+:root {
     --brownTextColor: #4B3733;
     --backgroundcolor: #B2D0C7;
-    --headerbg-golor: 
+    --headerbg-golor:
 }
 
 body {
@@ -21,9 +21,10 @@ body {
 .header {
     /* border: 5px double black; */
     text-align: center;
-    background: radial-gradient(circle, rgba(222,220,203,1) 0%, rgba(182,201,192,1) 100%);
+    background: radial-gradient(circle, rgba(222, 220, 203, 1) 0%, rgba(182, 201, 192, 1) 100%);
 }
-#kakochbak-text-logo{
+
+#kakochbak-text-logo {
     color: var(--brownTextColor);
     font-size: 4rem;
     font-weight: bold;
@@ -33,8 +34,9 @@ body {
 
 .wielcome-svg {
     width: 20%;
-    
+
 }
+
 .wielcome_div {
     position: relative;
     padding-top: .5em;
@@ -48,6 +50,7 @@ body {
         height: 10%;
         border-top: 5px double black;
     }
+
     &::after {
         content: "";
         position: absolute;
@@ -61,18 +64,27 @@ body {
 }
 
 
-.main {
-    
+.main {}
+
+#side {
+    margin-top: 22vh;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-#side {    
-    background-color: lightpink;
-    min-height: 30vh;
-    border: 2px solid black;
+#side h2 {
+    display: inline-block;
+    font-size: 1rem;
+    background-color: #8C827B;
+    border-radius: 999px;
+    text-align: center;
+    padding: 0.5rem 1rem;
 }
 
-#recept-info{
-    
+#recept-info {
+
     background-color: lightblue;
     min-height: 50vh;
 }
