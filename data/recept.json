@@ -15,8 +15,28 @@
     "ingredients": [
       { "name": "Mjöl", "baseAmount": 1, "unit": "kopp" },
       { "name": "Socker", "baseAmount": 0.5, "unit": "kopp" },
-      { "name": "VANILJ", "baseAmount": 2, "unit": "msk" }
+      { "name": "Vanilj", "baseAmount": 2, "unit": "msk" }
     ],
-    "instructions": "..."
+    "instructions": "Rör ihop ingredienserna och he in det i ugnen."
+  },
+  {
+    "recipeName": "Kolakakor",
+    "portions": 1,
+    "ingredients": [
+      { "name": "Smör", "baseAmount": 100, "unit": "gram" },
+      { "name": "Socker", "baseAmount": 1, "unit": "dl" },
+      { "name": "Mjöl", "baseAmount": 2, "unit": "dl" }
+    ],
+    "instructions": "Rör ihop ingredienserna och he in det i ugnen."
+  },
+  {
+    "recipeName": "Hallongrottor",
+    "portions": 1,
+    "ingredients": [
+      { "name": "Mjöl", "baseAmount": 4, "unit": "dl" },
+      { "name": "Hallonsylt", "baseAmount": 1, "unit": "dl" },
+      { "name": "Smör", "baseAmount": 200, "unit": "g" }
+    ],
+    "instructions": "Rör ihop ingredienserna och he in det i ugnen."
   }
 ]
