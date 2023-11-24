@@ -1,6 +1,13 @@
 
 async function getData() {
     const jsonResponse = await fetch("./data/recept.json");
+    const portions = document.getElementById('portion-count');
+    let portionsinput = 1;
+
+    portions.addEventListener('change', function(){
+        console.log(portions.value);
+        portionsinput = portions.value;
+    })
 
 
     if (jsonResponse.ok) {
@@ -23,6 +30,7 @@ async function getData() {
             side.appendChild(heading);
             
             heading.addEventListener("click", function() {
+                recipeInfo.innerHTML = '';
                 if (recipeName == "Chokladkaka") {
                     const ingredients = json[0].ingredients;
                     const instructions = json[0].instructions;
@@ -32,7 +40,7 @@ async function getData() {
 
                     ingredients.forEach(function(ingredient){
                         const recipeInfoP = document.createElement("p");
-                        recipeInfoP.textContent = `${ingredient.baseAmount} ${ingredient.unit} ${ingredient.name}`;
+                        recipeInfoP.textContent = `${ingredient.baseAmount * portionsinput} ${ingredient.unit} ${ingredient.name}`;
                         recipeInfo.appendChild(recipeInfoP);
                     })
                     const instructionP = document.createElement("p");
@@ -47,7 +55,7 @@ async function getData() {
 
                     ingredients.forEach(function(ingredient){
                         const recipeInfoP = document.createElement("p");
-                        recipeInfoP.textContent = `${ingredient.baseAmount} ${ingredient.unit} ${ingredient.name}`;
+                        recipeInfoP.textContent = `${ingredient.baseAmount * portionsinput} ${ingredient.unit} ${ingredient.name}`;
                         recipeInfo.appendChild(recipeInfoP);
                     })
                     const instructionP = document.createElement("p");
@@ -62,7 +70,7 @@ async function getData() {
 
                     ingredients.forEach(function(ingredient){
                         const recipeInfoP = document.createElement("p");
-                        recipeInfoP.textContent = `${ingredient.baseAmount} ${ingredient.unit} ${ingredient.name}`;
+                        recipeInfoP.textContent = `${ingredient.baseAmount * portionsinput} ${ingredient.unit} ${ingredient.name}`;
                         recipeInfo.appendChild(recipeInfoP);
                     })
                     const instructionP = document.createElement("p");
@@ -77,7 +85,7 @@ async function getData() {
 
                     ingredients.forEach(function(ingredient){
                         const recipeInfoP = document.createElement("p");
-                        recipeInfoP.textContent = `${ingredient.baseAmount} ${ingredient.unit} ${ingredient.name}`;
+                        recipeInfoP.textContent = `${ingredient.baseAmount * portionsinput} ${ingredient.unit} ${ingredient.name}`;
                         recipeInfo.appendChild(recipeInfoP);
                     })
                     const instructionP = document.createElement("p");
