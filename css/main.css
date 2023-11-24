@@ -1,0 +1,27 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.main {
+    
+}
+
+#side {    
+    background-color: lightpink;
+    min-height: 30vh;
+    border: 2px solid black;
+}
+
+#recept-info{
+    
+    background-color: lightblue;
+    min-height: 50vh;
+}
